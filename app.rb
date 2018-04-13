@@ -7,7 +7,7 @@ get '/newteam' do
   erb :newteam
 end
 
-post '/team' do
+post '/newteam' do
   @team_name = params[:name]
   @coach = params[:coach]
   @point_guard = params[:pg]
@@ -15,12 +15,12 @@ post '/team' do
   @power_forward = params[:pf]
   @small_forward = params[:sf]
   @center = params[:c]
-  binding.pry
-  erb :team
+  # binding.pry
+  # erb :team
 end
 
-# post '/team' do
-#   erb :team
-# end
+post '/team' do
+  erb :team
+end
 
 end
