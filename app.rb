@@ -7,7 +7,7 @@ get '/newteam' do
   erb :newteam
 end
 
-post '/team' do
+post '/newteam' do
   @team_name = params[:name]
   @coach = params[:coach]
   @point_guard = params[:pg]
