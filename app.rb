@@ -16,12 +16,12 @@ post '/team' do
   @small_forward = params[:sf]
   @center = params[:c]
   # binding.pry
-  # erb :team
-end
-
-post '/team' do
   erb :team
 end
+
+# post '/team' do
+#   erb :team
+# end
 
 get '/team' do
   erb :team
